@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/contactListFragment">
+
+    <fragment
+        android:id="@+id/contactListFragment"
+        android:name="com.example.gsichelero.contactmanager.ui.contactlist.ContactListFragment"
+        android:label="@string/contact_list_title"
+        tools:layout="@layout/contact_list_fragment">
+
+        <action
+            android:id="@+id/action_contactListFragment_to_contactFragment"
+            app:destination="@id/contactFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.example.gsichelero.contactmanager.ui.contact.ContactFragment"
+        android:label="@string/contact_title"
+        tools:layout="@layout/contact_fragment">
+
+        <argument
+            android:name="contact"
+            android:defaultValue="@null"
+            app:argType="com.example.gsichelero.contactmanager.data.db.entity.ContactEntity"
+            app:nullable="true" />
+    </fragment>
+</navigation>

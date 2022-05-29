@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Contact Manager</string>
+
+    <string name="contact_name_hint">Contact Name</string>
+    <string name="contact_phone_hint">Phone Number</string>
+
+    <string name="contact_button">Insert</string>
+    <string name="contact_button_update">Update</string>
+    <string name="contact_button_delete">Delete</string>
+    <string name="contact_title">Contact</string>
+
+    <string name="contact_inserted_successfully">The contact was successfully inserted</string>
+    <string name="contact_updated_successfully">The contact was successfully updated</string>
+    <string name="contact_deleted_successfully">The contact was successfully deleted</string>
+
+    <string name="contact_validation_error">You have entered an invalid name, phone or number type</string>
+
+    <string name="contact_error_to_insert">There was an error while inserting the contact</string>
+    <string name="contact_error_to_update">There was an error while updating the contact</string>
+    <string name="contact_error_to_delete">There was an error while deleting the contact</string>
+
+    <string name="contact_list_title">Contact List</string>
+    <string name="contact_list_menu_delete">Delete all</string>
+
+    <string-array name="phone_type">
+        <item>Home</item>
+        <item>Cellphone</item>
+        <item>Work</item>
+    </string-array>
+
+</resources>
